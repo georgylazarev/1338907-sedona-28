@@ -23,7 +23,67 @@
 
   <main>
     <h1 class="visually-hidden">Список гостиниц и мотелей Седоны</h1>
-    <!-- Здесь будут фильтры -->
+    <section class="filters">
+      <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
+      <form class="" action="https://echo.htmlacademy.ru" method="get">
+
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+          <label>
+            <input type="checkbox" name="poll" checked>
+            Бассейн
+          </label>
+          <label>
+            <input type="checkbox" name="parking">
+            Парковка
+          </label>
+          <label>
+            <input type="checkbox" name="wifi">
+            Wi-Fi
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Тип жилья:</legend>
+          <label>
+            <input type="checkbox" name="hotel" checked>
+            Гостиница
+          </label>
+          <label>
+            <input type="checkbox" name="motel" checked>
+            Мотель
+          </label>
+          <label>
+            <input type="checkbox" name="apartment" checked>
+            Апартаменты
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <legend>Стоимость в сутки (Р):</legend>
+          <div>
+            <label>
+              От
+              <input type="text" name="cost-min" placeholder="0">
+            </label>
+            <span class="separator"></span>
+            <label>
+              До
+              <input type="text" name="cost-max" placeholder="3000">
+            </label>
+          </div>
+
+          <div class="cost-range">
+            <button class="filter-button" type="button"><span class="visually-hidden">Минимальная цена</span></button>
+            <span class="cost-interval"></span>
+            <button class="filter-button" type="button"><span class="visually-hidden">Максимальная цена</span></button>
+          </div>
+
+          <button type="submit">Показать</button>
+        </fieldset>
+
+      </form>
+    </section>
     <div>
       <span>Найдено: 3</span>
       <span>Сортировка:</span>
@@ -40,10 +100,10 @@
       </ul>
       <ul>
         <li>
-          <a>По возрастанию</a>
+          <a><span class="visually-hidden">По возрастанию</span></a>
         </li>
         <li>
-          <a href="#">По убыванию</a>
+          <a href="#"><span class="visually-hidden">По убыванию</span></a>
         </li>
       </ul>
     </div>
