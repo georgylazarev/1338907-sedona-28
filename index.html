@@ -101,7 +101,7 @@
     <section>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-      <button type="button">Поиск гостиницы в Седоне</button>
+      <a href="#">Поиск гостиницы в Седоне</a>
     </section>
 
     <section>
@@ -141,26 +141,22 @@
     <form name="" method="get" action="https://echo.htmlacademy.ru">
       <div>
         <label for="start-date">Дата заезда:</label>
-        <input type="text" name="start-date" id="start-date">
+        <input type="text" name="start-date" id="start-date" placeholder="24 апреля 2017">
         <button type="button"><span class="visually-hidden">Выбрать дату заезда</span></button>
       </div>
       <div>
         <label for="end-date">Дата выезда:</label>
-        <input type="text" name="end-date" id="end-date">
+        <input type="text" name="end-date" id="end-date" placeholder="4 июля 2017">
         <button type="button"><span class="visually-hidden">Выбрать дату выезда</span></button>
       </div>
       <div>
-        <label>Взрослые:</label>
+        <label for="adult-count">Взрослые:</label>
         <button type="button"><span class="visually-hidden">Меньше</span></button>
-        <output name="adult-count">
-          2
-        </output>
+        <input type="text" name="adult-count" id="adult-count" placeholder="2">
         <button type="button"><span class="visually-hidden">Больше</span></button>
-        <label>Дети:</label>
+        <label for="children-count">Дети:</label>
         <button type="button"><span class="visually-hidden">Меньше</span></button>
-        <output name="children-count">
-          0
-        </output>
+        <input type="text" name="children-count" id="children-count" placeholder="0">
         <button type="button"><span class="visually-hidden">Больше</span></button>
       </div>
       <div>
