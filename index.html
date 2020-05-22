@@ -101,6 +101,7 @@
     <section>
       <h2>Заинтересовались?</h2>
       <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+      <button type="button">Поиск гостиницы в Седоне</button>
     </section>
 
     <section>
@@ -136,9 +137,37 @@
   </footer>
 
   <div class="hotel-popup">
-    <h2>Поиск гостиницы в Седоне</h2>
 
-    <!-- Здесь будет форма-->
+    <form name="" method="get" action="https://echo.htmlacademy.ru">
+      <div>
+        <label for="start-date">Дата заезда:</label>
+        <input type="text" name="start-date" id="start-date">
+        <button type="button"><span>Выбрать дату заезда</span></button>
+      </div>
+      <div>
+        <label for="end-date">Дата выезда:</label>
+        <input type="text" name="end-date" id="end-date">
+        <button type="button"><span>Выбрать дату выезда</span></button>
+      </div>
+      <div>
+        <label>Взрослые:</label>
+        <button type="button"><span>Меньше</span></button>
+        <output name="adult-count">
+          2
+        </output>
+        <button type="button"><span>Больше</span></button>
+        <label>Дети:</label>
+        <button type="button"><span>Меньше</span></button>
+        <output name="children-count">
+          0
+        </output>
+        <button type="button"><span>Больше</span></button>
+      </div>
+      <div>
+        <button type="submit">Найти</button>
+      </div>
+    </form>
+
   </div>
 </body>
 
