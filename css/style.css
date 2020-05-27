@@ -159,3 +159,59 @@ footer {
 
   background-color: var(--base-light-transparent-min);
 }
+
+.contacts,
+.contacts a {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--base-dark);
+
+  text-decoration: none;
+}
+
+.contacts a:hover,
+.contacts a:focus {
+  color: var(--accent-light);
+}
+
+.contacts a:active {
+  color: var(--base-dark-transparent);
+}
+
+.social-list {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.social-link::before {
+  display: block;
+  content: "";
+
+  width: 46px;
+  height: 48px;
+  background-color: var(--accent-light);
+}
+
+.twitter::before {
+  background-image: url(../img/twitter.svg);
+  background-position: center;
+  background-size: 17px 17px;
+  background-repeat: no-repeat;
+}
+
+.facebook::before {
+  background-image: url(../img/fb-icon.svg);
+  background-position: center;
+  background-size: 12px 22px;
+  background-repeat: no-repeat;
+}
+
+.youtube::before {
+  background-image: url(../img/youtube.svg);
+  background-position: center;
+  background-size: 20px 16px;
+  background-repeat: no-repeat;
+}
