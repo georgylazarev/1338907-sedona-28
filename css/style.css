@@ -22,7 +22,7 @@
 
   --border: #e5e5e5;
 
-  --active-page-nav: #766357;
+  --map-main-color: #e0edbb;
 }
 
 .visually-hidden {
@@ -37,16 +37,125 @@
 }
 
 body {
+  position: relative;
   padding: 0;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 26px;
-  
+  color: var(--base-dark);
+
   text-transform: uppercase;
 }
 
 img {
   max-width: 100%;
   height: auto;
+}
+
+.hotel-popup {
+  display: none;
+}
+
+.main-menu {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.main-menu a {
+  font-weight: 700;
+  color: var(--base-dark);
+  text-decoration: none;
+}
+
+.main-menu a:hover,
+.main-menu a:focus {
+  color: var(--accent-light);
+}
+
+.main-menu a:active {
+  color: var(--base-dark-transparent);
+}
+
+a.active-page,
+a.active-page:hover,
+a.active-page:focus,
+a.active-page:active {
+  color: var(--accent-dark);
+}
+
+.intro {
+  background-color: var(--accent-light);
+  background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
+  background-size: 100%, cover;
+  background-repeat: no-repeat, no-repeat;
+  background-position: bottom left, top left;
+}
+
+.intro p {
+  background-color: var(--base-light);
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.five-reasons h2 {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 26px;
+  color: var(--base-dark-lighter);
+}
+
+
+.hotel-search h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 24px;
+}
+
+.hotel-search p {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.hotel-search a {
+  background-color: var(--accent-dark);
+
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: var(--base-light);
+
+  text-decoration: none;
+}
+
+.hotel-search a:hover,
+.hotel-search a:focus {
+  background-color: var(--accent-dark-darker);
+}
+
+.hotel-search a:active {
+  background-color: var(--accent-dark-darkest);
+
+  color: var(--base-light-transparent-max);
+}
+
+.map-block {
+  width: 1199px;
+  height: 594px;
+
+  background-color: var(--map-main-color);
+  background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  background-color: var(--base-light-transparent-min);
 }
