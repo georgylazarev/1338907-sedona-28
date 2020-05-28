@@ -131,6 +131,7 @@ a.active-page:active {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
   width: 400px;
   height: 256px;
@@ -146,8 +147,16 @@ a.active-page:active {
   color: var(--base-light);
 }
 
+.five-accent p {
+    width: 330px;
+}
+
 .five-neutral {
   background-color: var(--base-neutral);
+}
+
+.five-neutral p {
+  width: 255px;
 }
 
 .five-real-city {
