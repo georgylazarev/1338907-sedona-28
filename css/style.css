@@ -25,6 +25,10 @@
   --border: #e5e5e5;
 
   --map-main-color: #e0edbb;
+
+  --htmlacademy-logo-base: #231f20;
+  --htmlacademy-logo-hover: #81b3d2;
+  --htmlacademy-logo-active: #bdbbbc;
 }
 
 .visually-hidden {
@@ -74,8 +78,7 @@ img {
   text-decoration: none;
 }
 
-.main-menu a:hover,
-.main-menu a:focus {
+.main-menu a:hover {
   color: var(--accent-light);
 }
 
@@ -137,8 +140,7 @@ a.active-page:active {
   text-decoration: none;
 }
 
-.hotel-search a:hover,
-.hotel-search a:focus {
+.hotel-search a:hover {
   background-color: var(--accent-dark-darker);
 }
 
@@ -178,8 +180,7 @@ footer {
   text-decoration: none;
 }
 
-.contacts a:hover,
-.contacts a:focus {
+.contacts a:hover {
   color: var(--accent-light);
 }
 
@@ -200,19 +201,17 @@ footer {
 }
 
 .social-link::before {
-  display: block;
-  content: "";
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
   width: 100%;
   height: 100%;
 
   background-color: var(--accent-light);
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
-.social-link:hover::before,
-.social-link:focus::before {
+.social-link:hover::before {
   background-color: var(--accent-light-darker);
 }
 
@@ -221,18 +220,39 @@ footer {
 }
 
 .twitter::before {
-  background-image: url(../img/twitter.svg);
-  background-size: 17px 17px;
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17' height='15' viewBox='0 0 17 15'%3E%3Cpath fill='%23FFF' d='M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z'/%3E%3C/svg%3E%0A");
+}
+
+.twitter:active::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17' height='15' viewBox='0 0 17 15'%3E%3Cpath fill='rgba(255, 255, 255, 0.3)' d='M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z'/%3E%3C/svg%3E%0A");
 }
 
 .facebook::before {
-  background-image: url(../img/fb-icon.svg);
-  background-size: 12px 22px;
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='22' viewBox='0 0 12 22'%3E%3Cpath fill='%23FFF' d='M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z'/%3E%3C/svg%3E");
+}
+
+.facebook:active::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='22' viewBox='0 0 12 22'%3E%3Cpath fill='rgba(255, 255, 255, 0.3)' d='M12 4V0H8a4 4 0 0 0-4 4v4H0v4h4v10h4V12h4V8H8V4h4z'/%3E%3C/svg%3E");
 }
 
 .youtube::before {
-  background-image: url(../img/youtube.svg);
-  background-size: 20px 16px;
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='16' viewBox='0 0 20 16'%3E%3Cpath fill='%23FFF' d='M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z'/%3E%3C/svg%3E%0A");
+}
+
+.youtube:active::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='16' viewBox='0 0 20 16'%3E%3Cpath fill='rgba(255, 255, 255, 0.3)' d='M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z'/%3E%3C/svg%3E%0A");
+}
+
+.design svg {
+  fill: var(--htmlacademy-logo-base);
+}
+
+.design svg:hover {
+  fill: var(--htmlacademy-logo-hover);
+}
+
+.design svg:active {
+  fill: var(--htmlacademy-logo-active);
 }
 
 /* HOTELS */
@@ -266,8 +286,7 @@ footer {
   text-decoration: none;
 }
 
-.sort-link:hover,
-.sort-link:focus {
+.sort-link:hover {
   color: var(--accent-light);
 }
 
@@ -277,10 +296,21 @@ footer {
   color: var(--base-dark);
 }
 
-.sort-link-active {
+.sort-active,
+.sort-active:hover,
+.sort-active:active {
+  border-bottom: 1px dashed var(--accent-light);
+
   font-size: 12px;
   line-height: 18px;
   color: var(--accent-light);
+}
+
+.order-by {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 32px;
 }
 
 .order-by li {
@@ -290,34 +320,35 @@ footer {
 
 .order-link::before {
   display: block;
-  content: "";
 
   width: 10px;
   height: 11px;
 
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
-}
-
-.order-link-active::before {
-  display: block;
-  content: "";
-
-  width: 10px;
-  height: 11px;
-
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  line-height: 11px;
 }
 
 .order-asc::before {
-  background-image: url(../img/icon-up-dir.svg);
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%23CACACA' d='M5.5 0L0 10h11z'/%3E%3C/svg%3E");
+}
+
+.order-asc:hover:not(.order-active)::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%23000000' d='M5.5 0L0 10h11z'/%3E%3C/svg%3E");
+}
+
+.order-asc:active:not(.order-active)::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%2381B3D2' d='M5.5 0L0 10h11z'/%3E%3C/svg%3E");
 }
 
 .order-desc::before {
-  background-image: url(../img/icon-down-dir.svg);
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%23CACACA' d='M5.5 10L0 0h11'/%3E%3C/svg%3E");
+}
+
+.order-desc:hover:not(.order-active)::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%23000000' d='M5.5 10L0 0h11'/%3E%3C/svg%3E");
+}
+
+.order-desc:active:not(.order-active)::before {
+  content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%2381B3D2' d='M5.5 10L0 0h11'/%3E%3C/svg%3E");
 }
 
 .hotels-item h2 a {
@@ -328,22 +359,30 @@ footer {
   text-decoration: none;
 }
 
-.hotels-item h2 a:hover,
-.hotels-item h2 a:focus {
+.hotels-item h2 a:hover {
   color: var(--accent-light);
 }
 
 .hotels-item h2 a:active {
   color: var(--base-dark-transparent);
 }
+.stars {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 17px;
+
+}
 
 .star {
-  display: inline-block;
+  display: block;
+  margin-left: 5px;
+
   width: 19px;
   height: 17px;
 
   background-image: url(../img/star.svg);
-  background-position: center;
+  background-position: top left;
   background-repeat: no-repeat;
   background-size: 100%;
 }
@@ -364,8 +403,7 @@ footer {
   background-color: var(--accent-light);
 }
 
-.more:hover,
-.more:focus {
+.more:hover {
   background-color: var(--accent-light-darker);
 }
 
@@ -390,8 +428,7 @@ footer {
   background-color: var(--accent-dark);
 }
 
-.reserve:hover,
-.reserve:focus {
+.reserve:hover {
   background-color: var(--accent-dark-darker);
 }
 
