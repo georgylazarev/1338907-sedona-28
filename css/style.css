@@ -370,6 +370,26 @@ footer {
 
 /* HOTELS */
 
+.filters {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--base-light);
+
+  background-color: var(--accent-light);
+  background-image: url(../img/background-blur.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.filters fieldset {
+  border: 0;
+}
+
+.filters legend {
+  font-weight: 700;
+  font-size: 16px;
+}
+
 .search-result-count {
   font-weight: 700;
   font-size: 21px;
@@ -462,6 +482,10 @@ footer {
 
 .order-desc:active:not(.order-active)::before {
   content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='11' height='10' viewBox='0 0 11 10'%3E%3Cpath fill='%2381B3D2' d='M5.5 10L0 0h11'/%3E%3C/svg%3E");
+}
+
+.hotels-item {
+  border-bottom: 1px solid var(--border);
 }
 
 .hotels-item h2 a {
