@@ -61,6 +61,8 @@ img {
   height: auto;
 }
 
+*, *::before, *::after { box-sizing: border-box; }
+
 .hotel-popup {
   display: none;
 }
