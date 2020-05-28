@@ -1,3 +1,5 @@
+/* COMMON */
+
 :root {
   --base-light: #ffffff;
   --base-light-transparent-min: rgba(255, 255, 255, 0.9);
@@ -57,6 +59,8 @@ img {
   display: none;
 }
 
+/* HEADER */
+
 .main-menu {
   margin: 0;
   padding: 0;
@@ -85,6 +89,8 @@ a.active-page:focus,
 a.active-page:active {
   color: var(--accent-dark);
 }
+
+/* MAIN */
 
 .intro {
   background-color: var(--accent-light);
@@ -152,6 +158,8 @@ a.active-page:active {
   background-size: cover;
 }
 
+/* FOOTER */
+
 footer {
   /* position: absolute;
   bottom: 0;
@@ -203,7 +211,8 @@ footer {
   background-repeat: no-repeat;
 }
 
-.social-link:hover::before {
+.social-link:hover::before,
+.social-link:focus::before {
   background-color: var(--accent-light-darker);
 }
 
@@ -224,4 +233,88 @@ footer {
 .youtube::before {
   background-image: url(../img/youtube.svg);
   background-size: 20px 16px;
+}
+
+/* HOTELS */
+
+.search-result-count {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.sort-options {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sort-by,
+.order-by {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.sort-link {
+  border-bottom: 1px dashed var(--accent-light);
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--base-dark-transparent);
+
+  text-decoration: none;
+}
+
+.sort-link:hover,
+.sort-link:focus {
+  color: var(--accent-light);
+}
+
+.sort-link:active {
+  border: 0;
+
+  color: var(--base-dark);
+}
+
+.sort-link-active {
+  font-size: 12px;
+  line-height: 18px;
+  color: var(--accent-light);
+}
+
+.order-by li {
+  width: 10px;
+  height: 11px;
+}
+
+.order-link::before {
+  display: block;
+  content: "";
+
+  width: 10px;
+  height: 11px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.order-link-active::before {
+  display: block;
+  content: "";
+
+  width: 10px;
+  height: 11px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.order-asc::before {
+  background-image: url(../img/icon-up-dir.svg);
+}
+
+.order-desc::before {
+  background-image: url(../img/icon-down-dir.svg);
 }
