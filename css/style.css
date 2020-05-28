@@ -44,7 +44,7 @@
   clip: rect(0 0 0 0)
 }
 
-body {
+.page-body {
   position: relative;
   padding: 0;
 
@@ -286,7 +286,7 @@ a.active-page:active {
 
 /* FOOTER */
 
-footer {
+.page-footer {
   /* position: absolute;
   bottom: 0;
   left: 0; */
