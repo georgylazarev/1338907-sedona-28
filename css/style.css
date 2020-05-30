@@ -338,6 +338,8 @@ a.active-page:active {
 
 /* END OF FIVE REASONS BLOCK */
 
+/* START OF HOTEL SEARCH BLOCK */
+
 .hotel-search {
   display: flex;
   flex-direction: column;
@@ -386,15 +388,17 @@ a.active-page:active {
   text-decoration: none;
 }
 
-.hotel-search a:hover {
+.hotel-search-link:hover {
   background-color: var(--accent-dark-darker);
 }
 
-.hotel-search a:active {
+.hotel-search-link:active {
   background-color: var(--accent-dark-darkest);
 
   color: var(--base-light-transparent-max);
 }
+
+/* END OF HOTEL SEARCH BLOCK */
 
 .map-block {
   width: 1199px;
@@ -409,11 +413,21 @@ a.active-page:active {
 /* FOOTER */
 
 .page-footer {
-  /* position: absolute;
+  display: flex;
+  align-items: center;
+
+  position: absolute;
   bottom: 0;
-  left: 0; */
+  left: 0;
+
+  width: 100%;
+  height: 120px;
 
   background-color: var(--base-light-transparent-min);
+}
+
+.contacts {
+  margin-left: 130px;
 }
 
 .contacts,
@@ -434,14 +448,22 @@ a.active-page:active {
   color: var(--base-dark-transparent);
 }
 
+/* START OF SOCIAL LINKS */
+.social {
+  margin-left: 170px;
+}
 .social-list {
+  display: flex;
+  justify-content: space-between;
   margin: 0;
   padding: 0;
+
+  width: 150px;
 
   list-style: none;
 }
 
-.social-list li {
+.social-list-item {
   width: 46px;
   height: 48px;
 }
@@ -454,6 +476,7 @@ a.active-page:active {
   width: 100%;
   height: 100%;
 
+  line-height: 0;
   background-color: var(--accent-light);
 }
 
@@ -466,6 +489,7 @@ a.active-page:active {
 }
 
 .twitter::before {
+
   content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='17' height='15' viewBox='0 0 17 15'%3E%3Cpath fill='%23FFF' d='M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z'/%3E%3C/svg%3E%0A");
 }
 
@@ -489,8 +513,19 @@ a.active-page:active {
   content: url("data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='20' height='16' viewBox='0 0 20 16'%3E%3Cpath fill='rgba(255, 255, 255, 0.3)' d='M17 0H3C1.35 0 0 1.35 0 3v10c0 1.65 1.35 3 3 3h14c1.65 0 3-1.35 3-3V3c0-1.65-1.35-3-3-3zM6.027 11.998V4.002L15.014 8l-8.987 3.998z'/%3E%3C/svg%3E%0A");
 }
 
+/* END OF SOCIAL LINKS */
+
+.design {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  margin-left: 228px;
+}
+
 .design svg {
   fill: var(--htmlacademy-logo-base);
+  margin-left: 8px;
 }
 
 .design svg:hover {
