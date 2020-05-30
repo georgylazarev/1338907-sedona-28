@@ -84,7 +84,7 @@ img {
 .logo {
   position: absolute;
   top: 0;
-  left: 571px;
+  left: 531px;
 }
 
 .main-menu {
@@ -138,14 +138,30 @@ a.active-page:active {
 }
 
 .intro {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 509px;
+
   background-color: var(--accent-light);
   background-image: url(../img/intro-mask.svg), url(../img/background-photo.jpg);
   background-size: 100%, cover;
   background-repeat: no-repeat, no-repeat;
-  background-position: bottom left, top left;
+  background-position: 0 453px, left top;
 }
 
-.intro p {
+.intro-text {
+  margin: 0 auto;
+  margin-top: 42px;
+
+  width: 470px;
+  height: 80px;
+
+  text-align: center;
+
   background-color: var(--base-light);
   font-weight: 700;
   font-size: 21px;
@@ -155,6 +171,7 @@ a.active-page:active {
 /* START OF FIVE REASONS BLOCK */
 
 .five-reasons-header {
+  margin: 0;
   margin-bottom: 51px;
 
   text-align: center;
