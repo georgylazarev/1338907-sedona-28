@@ -136,6 +136,8 @@ a.active-page:active {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  width: 100%;
 }
 
 
@@ -754,4 +756,17 @@ a.active-page:active {
   line-height: 21px;
 
   background-color: var(--accent-neutral);
+}
+
+.not-found-block {
+  position: absolute;
+  top: 40vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 20vh;
+
 }
