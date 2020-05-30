@@ -96,7 +96,7 @@ img {
   margin: 0;
   padding: 0;
 
-  width: 1054px;
+  width: 974px;
   height: 55px;
 
   list-style: none;
@@ -336,7 +336,6 @@ a.active-page:active {
   text-align: center;
   font-size: 14px;
   line-height: 21px;
-
 }
 
 /* END OF FIVE REASONS BLOCK */
@@ -542,6 +541,9 @@ a.active-page:active {
 /* HOTELS */
 
 .filters {
+  width: 100%;
+  height: 217px;
+
   font-size: 14px;
   line-height: 21px;
   color: var(--base-light);
@@ -553,12 +555,54 @@ a.active-page:active {
 }
 
 .filters fieldset {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+
+  outline: 1px solid red;
+
   border: 0;
 }
+
+fieldset.infastructure {
+  margin-left: 113px;
+}
+
+fieldset.house-type {
+  margin-left: 117px;
+}
+
+fieldset.cost {
+  margin-left: 338px;
+}
+
+.filters-form {
+  display: flex;
+}
+
+
 
 .filters legend {
   font-weight: 700;
   font-size: 16px;
+}
+
+.search-sort {
+  width: 100%;
+}
+
+.search-result {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 120px;
+
+  display: flex;
+  flex-direction: column;
+
+  width: 100%;
+
+  list-style: none;
 }
 
 .search-result-count {
@@ -573,8 +617,7 @@ a.active-page:active {
 }
 
 .sort-by,
-.order-by,
-.search-result {
+.order-by {
   padding: 0;
   margin: 0;
 
@@ -768,5 +811,4 @@ a.active-page:active {
 
   width: 100%;
   height: 20vh;
-
 }

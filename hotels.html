@@ -23,7 +23,7 @@
           </div>
           <div class="menu-separator">
             <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
+            <li><a class="active-page">Гостиницы</a></li>
           </div>
         </ul>
       </nav>
@@ -33,9 +33,9 @@
       <h1 class="visually-hidden">Список гостиниц и мотелей Седоны</h1>
       <section class="filters">
         <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
-        <form class="" action="https://echo.htmlacademy.ru" method="get">
+        <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
 
-          <fieldset>
+          <fieldset class="infastructure">
             <legend>Инфраструктура:</legend>
             <label>
               <input type="checkbox" name="poll" checked>
@@ -51,7 +51,7 @@
             </label>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="house-type">
             <legend>Тип жилья:</legend>
             <label>
               <input type="checkbox" name="hotel" checked>
@@ -67,7 +67,7 @@
             </label>
           </fieldset>
 
-          <fieldset>
+          <fieldset class="cost">
             <legend>Стоимость в сутки (Р):</legend>
             <div>
               <label>
