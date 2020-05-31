@@ -159,12 +159,15 @@ a.active-page:active {
 
 /* START OF FIVE REASONS BLOCK */
 
+.five-reasons-block {
+  width: 100%;
+}
+
 .intro-text {
   margin: 0 auto;
   margin-top: 42px;
 
   width: 470px;
-  /* height: 80px; */
 
   text-align: center;
 
