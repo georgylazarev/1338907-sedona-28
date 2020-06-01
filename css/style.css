@@ -61,7 +61,9 @@ img {
   height: auto;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 .hotel-popup {
   display: none;
@@ -75,7 +77,6 @@ img {
   margin: 0 auto;
 
   width: 1200px;
-  /* min-height: 100vh; */
 
   box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
@@ -96,18 +97,21 @@ img {
   margin: 0;
   padding: 0;
 
-  width: 1054px;
-  height: 56px;
+  min-height: 56px;
 
   list-style: none;
 }
 
 .menu-separator {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
+  margin-top: -2px;
+}
 
-  width: 327px;
+.main-menu-item {
+  text-align: center;
+  width: 230px;
 }
 
 .main-menu a {
