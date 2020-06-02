@@ -475,6 +475,18 @@ a.active-page:active {
   margin-left: 130px;
 }
 
+.contacts div:first-child {
+  height: 28px;
+  padding-left: 2px;
+  margin-top: -10px;
+}
+
+.contacts div:last-child {
+  height: 38px;
+  padding-left: 1px;
+  padding-top: 7px;
+}
+
 .contacts,
 .contacts a {
   font-weight: 700;
@@ -571,6 +583,7 @@ a.active-page:active {
 .design svg {
   fill: var(--htmlacademy-logo-base);
   margin-left: 8px;
+  margin-top: 4px;
 }
 
 .design svg:hover {
