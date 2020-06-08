@@ -35,36 +35,52 @@
         <h2 class="visually-hidden">Фильтры выбора гостиниц</h2>
         <form class="filters-form" action="https://echo.htmlacademy.ru" method="get">
 
-          <fieldset class="infastructure">
+          <fieldset class="filters-check-block infastructure">
             <legend>Инфраструктура:</legend>
-            <label>
-              <input type="checkbox" name="poll" checked>
-              Бассейн
-            </label>
-            <label>
-              <input type="checkbox" name="parking">
-              Парковка
-            </label>
-            <label>
-              <input type="checkbox" name="wifi">
-              Wi-Fi
-            </label>
+            <ul>
+              <li class="filters-option">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="poll" id="poll" checked>
+                <label for="poll">
+                  Бассейн
+                </label>
+              </li>
+              <li class="filters-option">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="parking" id="parking">
+                <label for="parking">
+                  Парковка
+                </label>
+              </li>
+              <li class="filters-option">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="wifi" id="wifi">
+                <label for="wifi">
+                  Wi-Fi
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
-          <fieldset class="house-type">
+          <fieldset class="filters-check-block house-type">
             <legend>Тип жилья:</legend>
-            <label>
-              <input type="checkbox" name="hotel" checked>
-              Гостиница
-            </label>
-            <label>
-              <input type="checkbox" name="motel" checked>
-              Мотель
-            </label>
-            <label>
-              <input type="checkbox" name="apartment" checked>
-              Апартаменты
-            </label>
+            <ul>
+              <li class="filters-option">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="hotel" id="hotel" checked>
+                <label for="hotel">
+                  Гостиница
+                </label>
+              </li>
+              <li class="filters-option">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="motel" id="motel" checked>
+                <label for="motel">
+                  Мотель
+                </label>
+              </li>
+              <li class="filters-option">
+                <input class="visually-hidden filters-checkbox" type="checkbox" name="apartment" id="apartment" checked>
+                <label for="apartment">
+                Апартаменты
+                </label>
+              </li>
+            </ul>
           </fieldset>
 
           <fieldset class="cost">
