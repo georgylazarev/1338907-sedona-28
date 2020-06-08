@@ -75,6 +75,28 @@ img {
 .hotel-popup {
   display: block;
   position: absolute;
+
+  margin: 100px;
+
+  width: 568px;
+  height: 395px;
+
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+}
+
+.hotel-popup div {
+  display: flex;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.hotel-popup input {
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  text-transform: inherit;
 }
 
 .page-wrapper {
