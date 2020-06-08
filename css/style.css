@@ -780,12 +780,7 @@ fieldset.cost {
 }
 
 .cost-range .toggle:hover {
-  top: 9px;
-  left: -2px;
-
-  width: 5px;
-  height: 5px;
-  border: 9px solid var(--base-light);
+  transform: scale(1.2);
 }
 
 .cost-range .toggle-min {
