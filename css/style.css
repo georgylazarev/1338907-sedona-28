@@ -34,6 +34,10 @@
   --htmlacademy-logo-active: #bdbbbc;
 }
 
+.page {
+  height: 100%;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -48,6 +52,8 @@
 .page-body {
   position: relative;
   padding: 0;
+
+  height: 100%;
 
   font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
@@ -76,6 +82,7 @@ img {
   grid-template-rows: auto auto auto;
 
   margin: 0 auto;
+  min-height: 100%;
 
   width: 1200px;
 
@@ -770,6 +777,15 @@ fieldset.cost {
   border-radius: 50%;
   box-shadow: 0 2px 1px 0 var(--accent-neutral-darkest);
   cursor: pointer;
+}
+
+.cost-range .toggle:hover {
+  top: 9px;
+  left: -2px;
+
+  width: 5px;
+  height: 5px;
+  border: 9px solid var(--base-light);
 }
 
 .cost-range .toggle-min {
