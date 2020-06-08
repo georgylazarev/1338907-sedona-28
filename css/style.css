@@ -802,6 +802,13 @@ fieldset.cost {
   background: none;
 }
 
+.filters-submit:hover {
+  color: var(--base-dark);
+  background-color: var(--base-light);
+  cursor: pointer;
+}
+
+
 /* END OF FILTERS BLOCK */
 
 /* START OF SORT LINE */
