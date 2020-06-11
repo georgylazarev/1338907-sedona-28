@@ -98,22 +98,32 @@ img {
   justify-content: space-between;
   align-items: center;
 
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
+  width: 1054px;
   min-height: 56px;
 
   list-style: none;
 }
 
-.menu-separator {
-  width: 20%;
+.main-menu-item:nth-child(1),
+.main-menu-item:nth-child(2) {
+  text-align: left;
+  width: 228px;
 }
 
-.main-menu-item {
-  text-align: center;
-  width: 20%;
+.main-menu-item:nth-child(3),
+.main-menu-item:nth-child(4) {
+  text-align: right;
+  width: 226px;
 }
+
+.main-menu-item:nth-child(2) {
+  margin-right: auto;
+}
+
+
 
 .main-menu a {
   font-weight: 700;
@@ -260,7 +270,7 @@ a.active-page:active {
   margin: 0;
   margin-top: 23px;
 
-  width: 301px;
+  width: 305px;
 
   text-align: center;
   font-size: 14px;
