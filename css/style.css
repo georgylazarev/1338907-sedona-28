@@ -499,6 +499,7 @@ a.active-page:active {
 
 .hotel-popup input::placeholder {
   color: var(--base-dark);
+  opacity: 1;
 }
 
 .date-button {
@@ -926,17 +927,17 @@ fieldset.cost {
   border: 0;
 }
 
-.cost-controls input::placeholder {
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--base-light);
-}
-
 .cost-controls input::-moz-placeholder {
   font-size: 14px;
   line-height: 32px;
   color: var(--base-light);
   opacity: 1;
+}
+
+.cost-controls input::placeholder {
+  font-size: 14px;
+  line-height: 21px;
+  color: var(--base-light);
 }
 
 .cost-range {
