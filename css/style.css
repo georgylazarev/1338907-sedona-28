@@ -107,15 +107,12 @@ img {
 }
 
 .menu-separator {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-top: -2px;
+  width: 20%;
 }
 
 .main-menu-item {
   text-align: center;
-  width: 230px;
+  width: 20%;
 }
 
 .main-menu a {
