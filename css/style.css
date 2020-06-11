@@ -608,12 +608,15 @@ a.active-page:active {
   justify-content: center;
   align-items: center;
 
+  margin-top: 24px;
+
   width: 458px;
   height: 58px;
 
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
+  text-transform: uppercase;
   color: var(--base-light);
   background-color: var(--accent-light);
   border: 0;
