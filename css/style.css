@@ -550,16 +550,12 @@ a.active-page:active {
 }
 
 .hotel-popup {
-  display: none;
-}
-
-.hotel-popup-show {
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-  bottom: 0;
+  bottom: -395px;
   margin: 0 auto;
 
   width: 568px;
@@ -567,10 +563,22 @@ a.active-page:active {
 
   background-color: var(--base-light);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+}
 
+.hotel-popup-show {
   -webkit-animation: slide 0.5s forwards;
 
           animation: slide 0.5s forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
+
+  z-index: 1;
+}
+
+.hotel-popup-hide {
+  -webkit-animation: slide-rev 0.5s forwards;
+
+          animation: slide-rev 0.5s forwards;
   -webkit-animation-direction: normal;
           animation-direction: normal;
 
@@ -585,6 +593,16 @@ a.active-page:active {
 @keyframes slide {
     from { bottom: 0;}
     to { bottom: -395px;}
+}
+
+@-webkit-keyframes slide-rev {
+    from { bottom: -395px;}
+    to { bottom: 0;}
+}
+
+@keyframes slide-rev {
+    from { bottom: -395px;}
+    to { bottom: 0;}
 }
 
 .hotel-popup form {
@@ -1209,7 +1227,8 @@ fieldset.cost {
   background: none;
 }
 
-.filters-submit:hover {
+.filters-submit:hover,
+.filters-submit:focus {
   color: var(--base-dark);
   background-color: var(--base-light);
   cursor: pointer;

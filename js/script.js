@@ -7,8 +7,13 @@ var endDate = document.querySelector("#end-date");
 var adultCount = document.querySelector("#adult-count");
 var childrenCount = document.querySelector("#children-count");
 
+document.addEventListener("DOMContentLoaded", () => {
+    pop.classList.add("hotel-popup-hide");
+  });
+
 searchLink.addEventListener("click", function(evt) {
   evt.preventDefault();
+  pop.classList.toggle("hotel-popup-hide");
   pop.classList.toggle("hotel-popup-show");
 
   if (pop.classList.contains("error-message")) {
@@ -44,6 +49,7 @@ window.addEventListener("keydown", function (evt) {
     if (pop.classList.contains("hotel-popup-show")) {
       evt.preventDefault();
       pop.classList.remove("hotel-popup-show");
+      pop.classList.add("hotel-popup-hide");
     }
     if (pop.classList.contains("error-message")) {
       pop.classList.remove("error-message");
