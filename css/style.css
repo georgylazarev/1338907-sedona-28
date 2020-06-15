@@ -5,6 +5,13 @@
 * Browsers: last 2 version,not dead
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead
+*/
+
 /* COMMON */
 
 :root {
@@ -568,10 +575,18 @@ a.active-page:active {
   background-color: var(--base-light);
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
 
-  animation: slide 0.5s forwards;
-  animation-direction: normal;
+  -webkit-animation: slide 0.5s forwards;
+
+          animation: slide 0.5s forwards;
+  -webkit-animation-direction: normal;
+          animation-direction: normal;
 
   z-index: 1;
+}
+
+@-webkit-keyframes slide {
+    from { bottom: 0;}
+    to { bottom: -395px;}
 }
 
 @keyframes slide {
