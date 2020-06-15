@@ -182,7 +182,10 @@ a.active-page:active {
 /* START OF FIVE REASONS BLOCK */
 
 .five-reasons-block {
+  position: relative;
   width: 100%;
+
+  z-index: 2;
 }
 
 .intro-text {
@@ -477,9 +480,25 @@ a.active-page:active {
   align-items: center;
   position: relative;
 
-  padding-top: 55px;
-
   width: 100%;
+
+  z-index: 1;
+}
+
+.hotel-search-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+
+  padding-top: 55px;
+  padding-bottom: 43px;
+
+  width: 668px;
+
+  background-color: var(--base-light);
+  z-index: 2;
 }
 
 .hotel-search-header {
@@ -505,8 +524,6 @@ a.active-page:active {
   justify-content: center;
   align-items: center;
 
-  margin-top: 43px;
-
   width: 568px;
   height: 86px;
 
@@ -518,6 +535,8 @@ a.active-page:active {
   color: var(--base-light);
 
   text-decoration: none;
+
+  z-index: 2;
 }
 
 .hotel-search-link:hover {
@@ -531,19 +550,33 @@ a.active-page:active {
 }
 
 .hotel-popup {
+  display: none;
+}
+
+.hotel-popup-show {
   display: flex;
   justify-content: center;
   align-items: center;
 
   position: absolute;
-  bottom: -395px;
+  bottom: 0;
   margin: 0 auto;
 
   width: 568px;
   height: 395px;
 
   background-color: var(--base-light);
-  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15)
+  box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
+
+  animation: slide 0.5s forwards;
+  animation-direction: normal;
+
+  z-index: 1;
+}
+
+@keyframes slide {
+    from { bottom: 0;}
+    to { bottom: -395px;}
 }
 
 .hotel-popup form {
