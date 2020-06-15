@@ -847,6 +847,7 @@ a.active-page:active {
 .page-footer {
   display: flex;
   align-items: center;
+  justify-content: space-around;
 
   position: absolute;
   bottom: 0;
@@ -856,10 +857,6 @@ a.active-page:active {
   height: 120px;
 
   background-color: var(--base-light-transparent-min);
-}
-
-.contacts {
-  margin-left: 130px;
 }
 
 .contacts div:first-child {
@@ -893,16 +890,11 @@ a.active-page:active {
 }
 
 /* START OF SOCIAL LINKS */
-.social {
-  margin-left: 170px;
-}
 .social-list {
   display: flex;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-
-  width: 150px;
 
   list-style: none;
 }
@@ -910,6 +902,10 @@ a.active-page:active {
 .social-list-item {
   width: 46px;
   height: 48px;
+}
+
+.social-list-item:not(:last-child) {
+  margin-right: 6px;
 }
 
 .social-link::before {
@@ -963,8 +959,6 @@ a.active-page:active {
   display: flex;
   justify-content: flex-start;
   align-items: center;
-
-  margin-left: 228px;
 }
 
 .design svg {
