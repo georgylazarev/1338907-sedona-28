@@ -1164,9 +1164,13 @@ fieldset.cost {
 }
 
 .cost-range .bar {
-  width: 70%;
+  margin-left: 10%;
+
+  width: 60%;
   height: 2px;
+
   background: var(--base-light);
+
 }
 
 .cost-range .toggle {
@@ -1192,7 +1196,7 @@ fieldset.cost {
 }
 
 .cost-range .toggle-min {
-  left: 0;
+  left: 10%;
 }
 
 .cost-range .toggle-max {
